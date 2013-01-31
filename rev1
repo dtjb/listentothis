@@ -1,0 +1,609 @@
+/* dtjb: removed existing css to start from a blank slate. i have a backup of the prior stylesheet*/
+
+
+/*** S T I C K Y   A N N O U N C E M E N T  ***/
+
+.titlebox .usertext-body .md h6 {
+    display: block;  
+    position: absolute; 
+    top: 180px;  
+    left: 10px; 
+    color: #943831; 
+    text-align: left;  
+    padding: 8px 13px 8px 29px; 
+    margin: 13px;
+    background-image: url(%%announce3%%);
+    background-repeat: no-repeat;
+    background-position:left;
+    }
+body > .content {
+    padding-top: 50px
+    }
+.titlebox form {
+    position: static
+    }
+
+
+
+
+
+/*** G L O B A L   S E T T I N G S  ***/
+
+body {
+    background: url(%%groovepaper%%) repeat
+    }
+#search { 
+    display: none !important; 
+    } 
+
+
+
+
+
+/*** H E A D E R ***/
+#header {
+    background: #373B47 url(%%topbg%%) top left repeat-x;
+    z-index: 99;
+    height: 187px
+    }
+#header-bottom-left .redditname a{
+    display:inline-block;
+    width:900px;
+    height:115px;
+    text-indent:-1000px;
+    background-image:url(%%top%%);
+    background-position:bottom left;
+    background-repeat:no-repeat
+    }
+
+
+
+
+/*** T I T L E B O X  ***/
+
+div.titlebox span.number::after {
+    content: " Listeners"
+    }
+div.titlebox span.word {
+    display: none
+    }
+.redditname {
+    height: 25px;
+    display: inline-block;
+    text-align: right
+    }
+.redditname a {
+    color: #fff
+    }
+.titlebox h1.redditname {
+    width: 100%;
+    text-align: center
+    }
+.titlebox h1.redditname > a {
+    float: none
+    }
+.titlebox h1.redditname::before {
+    content: "r/"
+    }
+.titlebox form.toggle {
+    background: none
+    }
+
+
+
+
+
+
+
+
+
+/*** T O P   S U B R E D D I T   B A R  ***/
+
+.sr-bar a {
+    color: #FFFFFF;
+    font-weight: bold
+    }
+.dropdown.srdrop .selected {
+    color: #EEEEEE;
+    font-weight: bold
+    }
+#sr-header-area {
+    padding: 3px 0px 3px 5px;
+    background-image: url(%%opacity-block%%);
+    background-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #555555 !important;
+    }
+
+
+
+
+/*** T H E   C O N T E N T ***/
+
+.thing {
+    margin-bottom: 30px;
+    }
+.thing .title {
+    color: #4B4B4F!important;
+    }
+.thing .title:visited {
+    color: #497C82!important;
+    }
+a.author {
+    color: #497C82
+    }
+a.author:hover {
+    color: #497C82;
+    text-decoration: underline
+    }
+.md ul {
+    list-style-type: circle
+    }
+.morelink {
+    background: none;
+    border: 1px solid #ccc
+    }
+.morelink:hover {
+    background: none;
+    background-color: #fff;
+    border: 1px solid #555
+    }
+.morelink a:hover {
+    text-decoration: none
+    }
+.link .usertext .md {
+    border: 1px solid #ccc
+    }
+.nub {
+    display: none
+    }
+.linkinfo {
+    background-color: #ededed;
+    border: 1px solid #555
+    }
+.link.last-clicked {
+    border: hidden;
+    }
+
+
+
+/*** R E V E A L   P O S T   I N F O   O N   H O V E R ***/
+
+#siteTable div.clearleft{
+  clear:none
+	}
+.usertext-body ul li{
+	visibility:visible!important
+	}
+#siteTable div.thing ul{
+	visibility:hidden
+	}
+#siteTable div.thing:hover ul{
+	visibility:visible
+	}
+#siteTable div.thing ul .nsfw-stamp{
+	visibility:visible
+	}
+#siteTable div.thing ul .first .comments{
+	visibility:visible;color:#943831
+	}
+#siteTable div.thing ul .first .empty{
+	visibility:visible;color:#2A3030
+	}
+#siteTable div.thing ul a{
+	color:#5c5b5b
+	}
+form#newlink{
+	margin-top:0!important
+	}
+.titlebox h1 a{
+	border:0px
+	}
+.titlebox h1 a:hover{
+	text-decoration:none;
+	background-color:white
+	}
+.titlebox a{
+	color:#000066
+	}
+.titlebox .usertext-body .md p{
+	color:#202020;
+	font-size:.9em;
+	margin-top:5px;
+	padding-left:2px
+	}
+
+
+
+
+/*** S I D E B A R ***/
+
+.side {
+    color: #2A3030;
+    width:280px;
+    background-color:#E6EFE8;
+    margin-bottom:40px;
+    padding:0px;
+    margin-top: 95px;
+    padding-left:10px;
+    padding-right:10px;
+    border:1px solid #497C82
+    }
+.side a {
+    color: #497C82
+    }
+.side a:hover {
+    color: #497C82;
+    text-decoration: underline
+    }
+.side h2 {
+    color: #943831;
+    margin-top:20px;
+    }
+.side h2 a{
+    color: #943831;
+    }
+.side h2 a:visited{
+    color: #943831;
+    }
+.side p, .side li {
+    font-size: 10px
+    }
+.sidebox .spacer {
+    background: none
+    }
+
+
+
+
+/*** A C T I V E   U S E R S ***/
+
+.side .titlebox .leavemoderator,
+.side .titlebox .toggle .flairtoggle,
+.side .titlebox .tagline,
+.side .titlebox .usertext {
+    clear: both !important;
+    }
+.side .titlebox .users-online {
+    padding-left: 2px;
+    }
+.side .titlebox .users-online .number:before {
+    content: "(" !important;
+    background: transparent !important
+    }
+.side .titlebox .users-online .number:after {
+    content: " active)" !important;
+    }
+.fancy-toggle-button,
+.side .titlebox .users-online,
+.side .titlebox .subscribers {
+    display:inline;
+    }
+.users-online::before {
+    display:none !important;
+    }
+div.titlebox .users-online span.word {
+    display: none
+    }
+
+
+
+
+/*** S C O R E C A R D ***/
+
+.linkinfo{
+    background-color:#fff;
+	border:1px solid #bababa;
+	width:277px;
+	border-radius:4px;
+	color:#363636;
+	text-align:center;
+	text-shadow:0px 1px 0px rgb(255,255,255);
+	font-size:11px;
+	box-shadow:1px 1px 2px #d9d9d9;
+	padding:5px 0px 0px 0px;
+	margin:0px 0px 8px;
+	background-position:bottom left;
+	background-repeat:repeat-x
+	}
+.linkinfo .downvotes .number,.linkinfo .upvotes .number,.linkinfo .score .number{
+	font-size:20px!important;
+	display:block;
+	font-weight:normal!important
+	}
+.linkinfo .score .number:after{
+	font-size:15px;
+	content:" points"
+	}
+.linkinfo .score .word{
+	display:none
+	}
+.linkinfo .score{
+	font-size:11px;
+	color:#aaaaaa;
+	display:block;
+	min-width:59px;
+	margin-left:54px!important
+	}
+.linkinfo .downvotes .word,.linkinfo .upvotes .word{
+	font-size:11px;
+	color:#aaaaaa
+	}
+.linkinfo .upvotes{
+	float:left;
+	padding:0px 10px 0px 0;
+	margin:8px 10px 10px 0;
+	text-align:center;
+	color:#FF8B60
+	}
+.linkinfo .score{
+	float:left;
+	padding:0px 10px 0px 0;
+	margin:8px 10px 10px 0;
+	text-align:center
+	}
+.linkinfo .downvotes{
+	float:left;
+	padding:0px 10px 0px 0;
+	margin:8px 10px 10px 12px;
+	text-align:center;
+	color:#9494FF
+	}
+.linkinfo .score,.linkinfo .upvotes{
+	border-right:1px solid #e8e7e7
+	}
+.linkinfo .score .number{
+	color:#363636
+	}
+.linkinfo .upvotes .number{
+	color:#FF8B60
+	}
+.linkinfo .downvotes .number{
+	color:#9494FF
+	}
+.linkinfo .shortlink{
+	clear:both!important;font-size:10px;
+	margin-top:10px;
+	color:#aaa
+	}
+.linkinfo .shortlink input{
+	background:#fff;
+	border:2px solid #f2f2f2;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	padding-left:8px;
+	font-size:10px;
+	color:#000;
+	width:60%;
+	margin-left:auto;
+	margin-right:auto
+	}
+.link .score{
+	color:#a9a9a9
+	}
+.link .score.likes{
+	color:#e83024
+	}
+.link .score.dislikes{
+	color:#000
+	}
+.linkinfo .upvotes .word{
+	font-size:0;
+	color:#eff7ff
+	}
+.linkinfo .upvotes:after{
+	content:"Dig it"
+	}
+.linkinfo .downvotes .word{
+	font-size:0;
+	color:#eff7ff
+	}
+.linkinfo .downvotes:after{
+	content:"Haters"
+	}
+
+
+
+
+/*** T A B   M E N U ***/
+
+#header-bottom-left ul.tabmenu{
+	position:absolute;
+	width:800px;
+	height:35px;
+	background-color:transparent;
+	margin-left:-220px;
+	top:140px;
+	}
+#header-bottom-left ul.tabmenu li{
+	float:left;
+	display:inline-block
+	}
+#header-bottom-left .redditname{
+	width:30px;
+	position:absolute;
+	top:36px;
+	margin:0;
+	margin-left:0px;
+	padding:0;
+	display:block
+	}
+#header-bottom-left ul.tabmenu li{
+	margin:0
+	}
+#header-bottom-left ul.tabmenu li a{
+	display:block;
+	background-color:transparent;
+	border:none;
+	margin:0;
+	padding:0;
+	height:34px;
+	border-right:1px solid #1f2424; 
+	border-left:1px solid #2A3030; 
+	border-top:none;
+	padding:0px 15px;
+	color:#fff!important;
+	font-size:12px;
+	line-height:250%
+	}
+#header-bottom-left ul.tabmenu li a:hover{
+	background-color:#2A3030;
+	border-right:1px #1f2424 solid;
+	color:#a7d6dc!important
+	}
+#header-bottom-left ul.tabmenu li:first-child a{
+	border-left:1px #2A3030 solid;
+	box-shadow:-1px 0 0 #1f2424;margin-left:0
+	}
+#header-bottom-left ul.tabmenu li:last-child a{
+	box-shadow:1px 0 0 #2A3030;
+	margin-left:0
+	}
+#header-bottom-left ul.tabmenu li.selected a{
+	color:#a7d6dc!important;
+	background:#2A3030;
+	border-top:1px solid #2A3030;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	position:relative;
+	padding-bottom:1px;
+	top:-1px;
+	-moz-box-shadow:1px 0 7px #232323;
+	-ms-box-shadow:1px 0 7px #232323;
+	-webkit-box-shadow:1px 0 7px #232323;
+	box-shadow:1px 0 7px #232323;
+	background:-moz-linear-gradient(top,#2A3030,#1f2424);
+	background:-ms-linear-gradient(top,#2A3030,#1f2424);
+	background:-o-linear-gradient(top,#2A3030,#1f2424);
+	background:-webkit-linear-gradient(top,#2A3030,#1f2424);
+	background:linear-gradient(top,#2A3030,#1f2424)
+	}
+
+
+/*** U S E R   B A R ***/
+
+#header-bottom-right{
+	background-color:#dfdfdf;
+	top:156px;
+	margin-right:5px;
+	z-index:100;
+	background-color:#497C82;
+	border-top:1px solid #3E6A6F;
+	border-left:1px solid #3E6A6F;
+	border-right:1px solid #3E6A6F;
+	border-top-left-radius:4px;
+	-moz-border-top-left-radius:4px;
+	-webkit-border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	-moz-border-top-right-radius:4px;
+	-webkit-border-top-right-radius:4px;
+	border-bottom-left-radius:0px;
+	-moz-border-bottom-left-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	-moz-border-bottom-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	display:block;height:18px;
+	padding:5px 10px 0px 10px;
+	font-size:11px;
+        }
+#header-bottom-right a{
+	color:#E6EFE8!important;
+	}
+#header-bottom-right .user{
+	padding-right:10px
+	}
+#header-bottom-right .user b{
+	font-weight:normal;
+	color:#E6EFE8!important
+	}
+#header-bottom-right .user{
+	color:#E6EFE8!important
+	}
+
+
+
+
+
+/*** S U B M I T   B U T T O N ***/
+
+.sidebox.submit {
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    }
+.sidebox.submit .spacer {
+    display: none;
+    }
+.sidebox .spacer a {
+    display: none
+    }
+.sidebox.create {
+    display: none
+    }
+.subtitle {
+    display: none
+    }
+.sidebox .spacer {
+    display: none
+    }
+.morelink {
+    background: none;
+    border: 0
+    }
+.morelink a {
+    height: 66px;
+    background: url(%%submit1%%) no-repeat;
+    margin-left:-10px;
+    margin-bottom:20px;
+    width: 300px;
+    text-indent: -9999px
+    }
+.morelink .nub {
+    display: none
+    }
+
+
+
+/*** S U B M I S S I O N   P A G E ***/
+#link-desc:after, #text-desc:after {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    content: "Submission rules: 1) Don't submit well-known music. 2) Follow the 'Artist - Title [genre]' format for your submission title. 3) Link to content, not blogs.";
+    } 
+.roundfield {
+    background-color: #E6EFE8;
+    }
+.infobar {
+    background-color: #943831;
+    border: #58211c;
+    color: #fff;
+    }
+.formtabs-content {
+    width: 520px;
+    border-top: 4px solid #497C82;
+    padding-top: 10px;
+    }
+.tabmenu.formtab .selected a {
+    color: #E6EFE8;
+    background-color: #497C82!important;
+    border: none;
+    }
+#suggested-reddits {
+    display: none;
+    }
+.content.submit .info-notice {
+    display: none;
+    }
+
+
+/*** R E S   F I X E S ***/
+
+#srLeftContainer, #RESStaticShortcuts, #RESShortcuts, #srDropdown, #RESShortcutsEditContainer, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsRight {
+    background-color: transparent
+    }
+
