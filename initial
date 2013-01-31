@@ -1,0 +1,267 @@
+/* ****** STICKY MESSAGE CONTROL ****** */
+/* This block changes h6 text into a stick message block at the top of the content pane. */
+/* ADD Message to SIDEBAR: ######This is a [Sticky Link](http://reddit.com/) message! */
+/* This message needs to be kept short (one line) or it will break page formatting. */
+/* Add the message as the last item in the sidebar for best results */
+/* OFF/ON SWITCH is simple, just delete/add an asterix-slash here --> */
+.content { padding-left: 15px; margin-right: 155px; margin-top: 25px; }
+div#siteTable.sitetable.linklisting { padding-right: 200px }
+div.commentarea { padding-right: 200px; }
+div.content { margin-top: 65px }  /* This lowers the links to create space */
+.titlebox form { position: static; }
+.side h6 { 
+  position: absolute; display: inline-block; top: 71px; left: 30px; text-align: center;
+  margin: 14px 11px 11px 11px; height: 24px; padding: 12px 18px 4px 18px; 
+  border: solid 1px gray; box-shadow: 0px 0px 2px black; vertical-align: middle; 
+  border-radius: 18px; }
+
+/* ****** NAMING and other SIMPLE tweaks ****** */
+
+/* turn off downvotes for everything, then turn it back on for comments */
+.arrow.down { visibility: hidden; display: none }
+.comment .arrow.down { visibility: visible; display: block }
+
+/* change text for subscribers and online users */
+.subscribers .word { display: none }
+.subscribers .number::after { content: " music lovers" }
+.users-online .word { display: none }
+.users-online .number::after {content: " listening now" }
+
+/* change name of upvotes and downvotes */
+.upvotes span.word { display: none }
+.upvotes span.number::after { content: " sharps" }
+.downvotes span.word { display: none }
+.downvotes span.number::after { content: " flats" }
+
+/* ****** END NAMING and SIMPLE tweaks ****** */
+
+
+/* ****** SIDEBAR SETTINGS including SEARCH and SUBMIT ****** */
+
+/* get rid of the subreddit name in the sidebar */
+.titlebox .redditname { display: none; }
+
+/* Control the relative height at which the sidebar contents begin */
+.titlebox { margin-top: 14px; } 
+
+/* Set the relative position of the online users element in the sidebar */
+/* Places the element beside the subscriber count rather than below it */
+.titlebox .users-online { margin-top: -17px; margin-left: 145px; }
+
+/* tweak sidebar appearance, add simple borders */
+.side { padding: 70px 8px 4px 8px; margin: 6px 6px 6px 6px;
+        border: solid 1px gray; box-shadow: 0px 0px 2px black; 
+        border-radius: 18px; -moz-border-radius: 18px; -webkit-border-radius: 18px; }
+
+/* hide the crap that usually appears below the submit button */
+.nub, .sidebox.create, .sidebox.submit .spacer { display: none }
+
+/* change submit button text, style, relocate to top of sidebar */
+.morelink a { font-size: 0; content: ''; }
+.morelink a::before { content: 'Submit Music'; font-size: 15px; }
+.morelink { position: absolute; top: 89px; right: 22px; width: 285px; text-align: center;
+          border-radius: 18px; -moz-border-radius: 18px; -webkit-border-radius: 18px; }
+
+/* change search box location, size, popunder properties */
+div.side div.spacer #search input[type="text"] { 
+   position: absolute; top: 128px; right: 40px; width: 246px; text-align: center;  
+   border-radius: 18px; -moz-border-radius: 18px; -webkit-border-radius: 18px; }
+form#search.input, #searchexpando { border-radius: 25px !important; } /* popunder */
+
+/* modify the sidebar text appearance for h2 section titles */
+.side .titlebox .usertext-body .md h2 {
+   display: block; margin: 4px 4px 4px 4px; padding: 5px 5px 5px 5px; font-size: 1.1em;
+   border: solid 1px gray; box-shadow: 0px 0px 2px black;
+   border-radius: 18px; -moz-border-radius: 18px; -webkit-border-radius: 18px;
+   text-align: center; }
+
+/* modify the sidebar text appearance for h5 section center justified */
+.side .titlebox .usertext-body .md h5 { text-align: center; margin: 8px 0px 10px 0px;}
+
+/* ****** END SIDEBAR SETTINGS including SEARCH and SUBMIT ****** */
+
+
+/* ****** COLOR SETTINGS for ALL page elements ****** */
+
+/* Set the colors for all of the common sidebar/header elements at once */
+/* Background controls background, color controls text */
+.side, .titlebox form.toggle, #searchexpando, #adlink, .subtitle, .sidebox .spacer, 
+.linkinfo, .sidebox .submit, .sidecontentbox, .sidecontentbox a, .side .flair, 
+.bottom, .leavemoderator, .side h6
+   { background-color: #FFFFFF; color: #000000; }
+
+/* Set background for header, linkinfo, and side H2 bars separately */
+.side h2 { background-color: #FFFFFF; color: #000000; }
+
+/* Set the background color behind submissions */
+body { background-color: #FFFFFF !important; }
+
+/* distinguish odd-numbered submission/link appearance */
+.odd { background-color: #F8F8F8; }
+.sidecontentbox .odd { background-color: transparent !important; }
+
+/* Set text color for text links in the sidebar */
+.side li a { color: #336699!important; }
+.side p a { color: #336699!important; }
+.side h2 strong a { color: #336699!important; }
+.side h5 a { color: #336699!important; }
+.side h6 a { color: red !important; }
+.side .leavemoderator a { color: #336699!important; }
+.side a.togglebutton { color: #336699!important; }
+
+/* Change the appearance of the tab links at the top 
+.tabmenu li a { background-color: #EDF5FC !important; }
+.tabmenu li.selected a { font-weight: bold; color: blue; }
+
+/* Change the appearance of the name of the page at the top left 
+.pagename:before { content: "r/"; }
+.pagename { margin-left: 5px; text-transform: lowercase !important;
+            font-weight: normal; color: #434 !important; opacity: 0.6; }
+
+/* ****** END COLOR SETTINGS for ALL page elements ****** */
+
+
+/* ****** SUBMISSION APPEARANCE tweaks ****** */
+
+/* Control submission/link appearance */
+p.title a.title { font-size: 16px !important; color: blue !important;
+                  font-weight: normal; text-align: justify; }
+
+/* Control visited submission/link appearance */
+p.title a:visited { color: purple !important; font-style: italic !important; }
+
+/* Change color of Vote totals on Submissions */
+.link .score { text-align: center; color: blue; } /* regular */
+.link .score.likes { color: #FF4500 !important; } /* upvoted */
+
+/* Control color and space around the tagline 'submitted x ago by y' */
+.entry .tagline { color: black !important; padding: 1px; }
+
+/* Control the color and other properties for the elements of the title */
+.entry .flat-list, .entry .flat-list a, .title
+  { background-color: transparent !important; color: #000000; }
+.entry .comments { color: blue !important; }
+.entry .tagline a { font-weight: normal !important; color: blue; }
+
+/* Control the spacing around the upvote icon/arrow/totals */
+.midcol { height: 55px !important; width: 45px !important; }
+
+/* Replace upvote/upvoted arrow with images for LINKS ONLY */
+div#siteTable.sitetable.linklisting .arrow.up, 
+div#siteTable.sitetable.linklisting .res-nightmode .arrow.up,
+div#siteTable.sitetable.linklisting .res-nightmode .arrow.up:hover {
+  background-image:url(%%upvote%%) !important;
+  background-position: center center !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+div#siteTable.sitetable.linklisting .arrow.upmod,
+div#siteTable.sitetable.linklisting .res-nightmode .arrow.upmod { 
+  background-image:url(%%upvoted%%) !important;
+  background-position: center center !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+/* ****** END SUBMISSION APPEARANCE TWEAKS ****** */
+
+/* Flair SETTINGS that no one understands */
+.flair { background-color: transparent !important; color: #000000 !important; 
+         font-style: italic; margin-left: -1px; border: none !important; }
+.flairtoggle, .side .tagline { display: none !important; }
+.bottom .flair { display: none; }
+
+/* SUBMIT PAGE TEXT for people who don't know the posting rules */
+#link-desc::after { display: block; margin-top: 1em; font-weight: bold; color: red;
+    content: "This tab is for submitting music links. All titles are required to contain the ARTIST name, song TITLE, and one or more GENRE tags. If the music is NEW, LIVE, RARE, or NSFW, please include those tags as well so the moderators will know to give the post special consideration. Please link directly to music, not to blogs or reviews. Do not link to popular music with more than 250,000 views unless it is new music released within the last month or a good live performance." }
+
+#text-desc::after { display: block; margin-top: 1em; font-weight: bold; color: red;
+    content: "This tab is for bringing up topics or posting news the listentothis community will find interesting. Do not use these self posts to submit music - use the links tab above instead. If you want to ask for music recommendations, that is a topic for r/ifyoulikeblank, not r/listentothis." }
+
+
+
+/*** HEADER ***/
+/*added by dtjb jan 16 8:00est*/
+
+#header {
+    background: #373B47 url(%%header-v3%%) bottom left no-repeat;
+    border-bottom: 0px solid #555;
+    position: relative;
+    z-index: 99;
+    height: 150px
+    }
+#header-bottom-left {
+    margin-left: 77px;
+    margin-top: 28px;
+    }
+.pagename a {
+    display: block;
+    background-image: url(%%overlay1%%);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 357px;
+    margin: 0 auto;
+    font-size: 0px;
+    color: #364657;
+    left: 167px;
+    position: absolute;
+    top: 67px
+    }
+.pagename {
+    margin-left: 0;
+    margin-right: auto;
+    color: white
+    }
+
+
+/*** TAB MENU ***/
+/*added by dtjb jan 16 8:00est*/
+
+.tabmenu {
+    margin-left: -200px;
+    margin-top: 83px;
+    }
+.tabmenu li.selected a {
+    border-color: #F6F6F6!important;
+    border-style: solid;
+    border-width: 3px;
+    color: #2e1e26 !important;
+    background-color: #fff!important
+    }
+.tabmenu li a {
+    background-color: #2e1e26 !important;
+    color: #FFFFFF !important;
+    border-width: 3px;
+    border-color: #2d3745!important;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px
+    }
+.tabmenu li a:hover {
+    background-color: #F6F6F6 !important;
+    color: #222222 !important;
+    border-width: 3px;
+    border-color: #F6F6F6!important;
+    }
+
+
+/*** TOP SUBREDDIT BAR ***/
+/*added by dtjb jan 16 8:00est*/
+
+.sr-bar a {
+    color: #FFFFFF;
+    font-weight: bold
+    }
+.dropdown.srdrop .selected {
+    color: #EEEEEE;
+    font-weight: bold
+    }
+#sr-header-area {
+    padding: 3px 0px 3px 5px;
+    background-image: url(%%opacity-block%%);
+    background-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #555555 !important;
+    }
